@@ -1,0 +1,35 @@
+{
+	"name": "app-notas",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index",
+		"start": "node src/index"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "2.4.3",
+		"connect-mongodb-session": "3.1.1",
+		"dotenv": "16.0.0",
+		"express": "4.17.3",
+		"express-handlebars": "6.0.5",
+		"express-session": "1.17.2",
+		"handlebars": "4.7.7",
+		"mongoose": "6.3.1",
+		"morgan": "1.10.0",
+		"nanoid": "3.3.3"
+	},
+	"devDependencies": {
+		"eslint": "8.14.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-config-standard": "17.0.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-n": "15.2.0",
+		"eslint-plugin-promise": "6.0.0",
+		"nodemon": "2.0.15",
+		"prettier": "2.6.2"
+	}
+}

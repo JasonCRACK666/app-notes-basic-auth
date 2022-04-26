@@ -1,0 +1,32 @@
+<div>
+	<h1 class='text-danger text-center fw-bold m-2'>App Notes</h1>
+	<div class='container'>
+		<div class='row justify-content-md-center'>
+			<div class='col-md-3 card p-3'>
+				<h2 class='text-center'>Login</h2>
+				<form action='/login' method='post'>
+					<div class='mb-3'>
+						<label for='email' class='form-label'>Email:</label>
+						<input type='email' name='email' id='email' class='form-control' />
+					</div>
+					<div class='mb-3'>
+						<label for='password' class='form-label'>Password:</label>
+						<input
+							type='password'
+							name='password'
+							id='password'
+							class='form-control'
+						/>
+					</div>
+					<button type='submit' class='btn btn-secondary'>
+						Loguearse
+					</button>
+				</form>
+				<p class='m-0 fw-bold text-center'>No estás registrado? REGÍSTRATE!</p>
+				<a href='/register' class='link text-center text-success'>
+					Registrarse
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

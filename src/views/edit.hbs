@@ -1,0 +1,38 @@
+<div>
+  {{> navbar}}
+	<div class='container pt-3'>
+		<div class='row justify-content-md-center'>
+			<div class='col-md-3 card p-3'>
+				<h1 class='text-center'>Editar nota</h1>
+				<form action='/notes/edit/{{note._id}}' method='post'>
+					<div class='mb-3'>
+						<label for='title' class='form-label'>Title:</label>
+						<input
+							type='text'
+							name='title'
+							id='title'
+							value='{{note.title}}'
+							class='form-control'
+						/>
+					</div>
+					<div class='mb-3'>
+						<label for='content' class='form-label'>Content:</label>
+						<textarea
+							name='content'
+							id='content'
+							cols='30'
+							rows='5'
+							class='form-control'
+							style='resize: none;'
+						>{{note.content}}</textarea>
+					</div>
+					<div class='d-grid'>
+						<button type='submit' class='btn btn-primary'>
+							Editar
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
